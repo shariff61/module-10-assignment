@@ -161,3 +161,22 @@ hr {
   opacity: 0.5;
   font-size: 0.9rem;
 }
+/* ------------------football website------------- */
+.games {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+.flags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flags img {
+  border-radius: 0;
+}
+
+.time-of-games {
+  opacity: 0.75;
+}
