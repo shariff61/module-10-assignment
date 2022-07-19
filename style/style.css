@@ -161,6 +161,21 @@ hr {
   opacity: 0.5;
   font-size: 0.9rem;
 }
+/* ------------------------------ */
+/* --------Social Icons------------ */
+.social-icons ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  gap: 2rem;
+}
+.social-icons a {
+  background-color: rgb(67, 67, 80);
+  padding: 0.8rem;
+  border-radius: 100px;
+}
 /* ------------------football website------------- */
 .games {
   display: grid;
