@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1240px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: 0.5;
+  color: #212529;
+}
+/* -------------top header section---------- */
+h1 {
+  font-size: 4rem;
+  color: #343a40;
+  animation: names 2s ease-in;
+}
+
+h2 {
+  font-size: 2rem;
+}
+img {
+  border-radius: 12px;
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  background-color: #ffdeeb;
+  border-radius: 15px;
+  margin: 5rem 0;
+  padding: 1rem 2rem;
+}
+/* start animation */
+@keyframes names {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(1.5);
+  }
+}
+/* finish animation */
+.container .half-width {
+  width: 50%;
+}
+.container .half-width img {
+  max-width: 100%;
+}
+.container .half-width:hover img {
+  animation: names 2s ease-in;
+}
+
+.link {
+  display: inline-block;
+  background-color: #f03e3e;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  margin: 2rem 0;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 1s ease-in-out;
+}
+.link:hover {
+  transform: translateX(40px);
+}
+.link span {
+  margin-left: 0.5rem;
+}
+
+/* -----------aside (navbar)------- */
+aside {
+  background-color: #212529;
+  max-width: 300px;
+  max-height: 300px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+.navbar ul li {
+  list-style: none;
+}
+.nav-link {
+  background-color: white;
+  color: #343a40;
+  margin: 1rem;
+  width: 220px;
+}
+#blog {
+  background-color: #f03e3e;
+  color: white;
+}
+/* ----------------------------------- */
+/* -----------style aside and games also------- */
+.main-section {
+  display: flex;
+  gap: 2rem;
+  margin: 5rem 0;
+  /* align-items: center; */
+}
+.games {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.games-details {
+  box-shadow: 2px 2px 12px #dadee2;
+  border-radius: 12px;
+  background-color: #dadee2;
+  padding: 1rem;
+}
+.games-details h4 {
+  margin-bottom: 0.8rem;
+}
+.icons {
+  display: flex;
+  gap: 2rem;
+  opacity: 0.75;
+}
+.icons span {
+  margin-right: 0.8rem;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  margin: 0.8rem;
+}
+/* --------------------------------------- */
+/* --------btn secrate-------- */
+.btn-secrate {
+  display: none;
+}
+/* -----------footer------------ */
+.footer {
+  background-color: #212529;
+  color: white;
+  padding: 5rem;
+  text-align: center;
+}
+hr {
+  margin: 3rem;
+  opacity: 0.25;
+  max-width: 900px;
+}
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-nav ul li a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
