@@ -79,6 +79,12 @@
   .btn-secrate {
     display: none;
   }
+
+  #ronaldo-football {
+    bottom: 40px;
+
+    right: 120px;
+  }
 }
 
 /* ------------tab device responsive --------------*/
@@ -87,6 +93,7 @@
   .container {
     margin: 0 0 1rem 0;
   }
+
   .games {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

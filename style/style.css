@@ -19,9 +19,6 @@ h1 {
   font-size: 4rem;
   color: #343a40;
 }
-h1:hover {
-  animation: names 2s ease-in;
-}
 
 h2 {
   font-size: 2rem;
@@ -30,8 +27,15 @@ img {
   border-radius: 12px;
   max-width: 100%;
 }
+#football-img {
+  position: absolute;
+  width: 10%;
+  left: 250px;
 
+  animation: names 2s ease-in infinite;
+}
 .container {
+  position: relative;
   display: flex;
   gap: 2rem;
   background-color: #ffdeeb;
@@ -42,10 +46,10 @@ img {
 /* start animation */
 @keyframes names {
   from {
-    transform: scaleX(1);
+    transform: rotate(0deg);
   }
   to {
-    transform: scaleX(1.5);
+    transform: rotate(360deg);
   }
 }
 /* finish animation */
@@ -53,12 +57,14 @@ img {
   width: 50%;
 }
 .container .half-width img {
-  max-width: 100%;
-}
-.container .half-width:hover img {
-  animation: names 2s ease-in;
+  width: 100%;
 }
 
+/*--------- i deleted this animation for img------- */
+/* .container .half-width:hover img {
+  animation: names 2s ease-in;
+} */
+/* ------------------------------------------------------- */
 .link {
   display: inline-block;
   background-color: #f03e3e;
@@ -95,7 +101,7 @@ aside {
   margin: 1rem;
   width: 220px;
 }
-#blog {
+#match {
   background-color: #f03e3e;
   color: white;
 }
@@ -181,6 +187,14 @@ hr {
   color: white;
 }
 /* ------------------football website------------- */
+#ronaldo-football {
+  position: absolute;
+  bottom: 22%;
+  width: 5%;
+  right: 16%;
+
+  animation: names 2s ease-in infinite;
+}
 .games {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
