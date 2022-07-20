@@ -18,6 +18,8 @@ body {
 h1 {
   font-size: 4rem;
   color: #343a40;
+}
+h1:hover {
   animation: names 2s ease-in;
 }
 
@@ -175,6 +177,8 @@ hr {
   background-color: rgb(67, 67, 80);
   padding: 0.8rem;
   border-radius: 100px;
+  font-size: 2rem;
+  color: white;
 }
 /* ------------------football website------------- */
 .games {

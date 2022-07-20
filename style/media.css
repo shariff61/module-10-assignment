@@ -52,9 +52,7 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .games-details {
-    width: 100%;
-  }
+  .games-details,
   .games-details img {
     width: 100%;
   }
@@ -86,10 +84,18 @@
 /* ------------tab device responsive --------------*/
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
+  .container {
+    margin: 0 0 1rem 0;
+  }
   .games {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .games-details,
+  .games-details img {
+    width: 100%;
+  }
+
   aside {
     background-color: white;
   }
@@ -99,6 +105,7 @@
   .navbar ul li a {
     border: 1px solid gray;
   }
+
   .main-section {
     display: flex;
     flex-direction: column;
